@@ -39,7 +39,7 @@ const CountriesSearch = () => {
             }
         })
             .map((val,id)=>(
-                <div key={id} className={styles.CountryCard} >
+                <div key={id} className={styles.countryCard} >
                     <img src={val.flags.png} alt="country-flag" style={{width: '100%',height:'120px',objectFit:'cover',overflow:'hidden'}} />
                     <p style={{textAlign:'center',width:'100%', height:'50px'}}>{val.name.common}</p>
                 </div>
