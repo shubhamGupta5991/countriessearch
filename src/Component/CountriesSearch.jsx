@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import  { useEffect, useState } from 'react';
-import styles from './Countries.module.css'
+import  './Countries.css'
 
 const CountriesSearch = () => {
   const [data,setData] = useState([])
@@ -39,7 +39,7 @@ const CountriesSearch = () => {
             }
         })
             .map((val,id)=>(
-                <div key={id} className={styles.countryCard} >
+                <div key={id} className='countryCard' >
                     <img src={val.flags.png} alt="country-flag" style={{width: '100%',height:'120px',objectFit:'cover',overflow:'hidden'}} />
                     <p style={{textAlign:'center',width:'100%', height:'50px'}}>{val.name.common}</p>
                 </div>
